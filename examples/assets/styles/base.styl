@@ -1,0 +1,39 @@
+// 优化显示
+body {
+  color: #515a6e;
+  font-size: 14px;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #1089ff;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon-loading {
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

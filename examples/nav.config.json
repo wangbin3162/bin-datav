@@ -1,0 +1,27 @@
+{
+  "开发指南": [
+    {
+      "name": "guide",
+      "path": "/guide",
+      "desc": "指南"
+    },
+    {
+      "name": "logs",
+      "path": "/logs",
+      "desc": "更新日志"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础",
+      "items": [
+        {
+          "desc": "Test 测试菜单",
+          "icon": "fire",
+          "name": "test",
+          "path": "/test"
+        }
+      ]
+    }
+  ]
+}
