@@ -29,7 +29,6 @@ import { watch, ref, onMounted, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
 
 const cfg = require('/package.json')
-console.log(cfg)
 
 export default {
   name: 'App',
