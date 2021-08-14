@@ -5,7 +5,8 @@
         <div class="logo">
           <img src="../assets/images/logo/bin-ui-next-02.svg" class="icon" alt="icon"/>
           <div class="text">
-            <img src="../assets/images/text.svg" alt="text"/>
+            <h2>BIN-DATAV</h2>
+            <p>components for data view</p>
           </div>
         </div>
       </div>
@@ -37,8 +38,8 @@ export default {
     },
     handleCommand(name) {
       this.$util.open(`https://github.com/wangbin3162/${name}`, true)
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -63,7 +64,6 @@ export default {
     .logo {
       display: flex;
       align-items: center;
-      color: #1089ff;
       text-transform: uppercase;
       font-weight: bold;
       font-family: helvetica;
@@ -75,9 +75,19 @@ export default {
         height: 54px;
       }
       .text {
+        display: flex;
+        flex-direction: column;
         height: 64px;
         overflow: hidden;
         margin-left: 18px;
+        h2 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 24px;
+        }
         img {
           width: 100%;
           opacity: .85;

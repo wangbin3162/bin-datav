@@ -13,13 +13,19 @@
   ],
   "组件": [
     {
-      "desc": "基础",
+      "desc": "功能",
       "items": [
         {
-          "desc": "Test 测试菜单",
+          "desc": "图标背景",
           "icon": "fire",
-          "name": "test",
-          "path": "/test"
+          "name": "icon",
+          "path": "/icon"
+        },
+        {
+          "desc": "数字翻牌器",
+          "icon": "orderedlist",
+          "name": "countTo",
+          "path": "/count-to"
         }
       ]
     }

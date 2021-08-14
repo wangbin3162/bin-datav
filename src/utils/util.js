@@ -168,6 +168,28 @@ export function deepCopy(data) {
 }
 
 /**
+ * @description 深覆盖
+ * @param target
+ * @param merged
+ */
+export function deepMerge(target, merged) {
+  for (const key in merged) {
+    if (target[key] && typeof target[key] === 'object') {
+      deepMerge(target[key], merged[key])
+      continue
+    }
+    if (typeof merged[key] === 'object') {
+      target[key] = deepCopy(merged[key])
+
+      continue
+    }
+    target[key] = merged[key]
+  }
+
+  return target
+}
+
+/**
  * 在某个区间随机一个整数
  * @param min 最小值
  * @param max 最大值

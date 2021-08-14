@@ -1,12 +1,13 @@
-import BIcon from './components/icon'
-
+import Icon from './components/icon'
+import CountTo from './components/count-to'
 import config from '../package.json'
 import log from './utils/log'
 
 const version = config.version // version_ to fix tsc issue
 
 const components = [
-  BIcon,
+  Icon,
+  CountTo,
 ]
 const install = function (app, options = {}) {
   components.forEach(component => {
@@ -20,7 +21,8 @@ const install = function (app, options = {}) {
 }
 
 export {
-  BIcon,
+  Icon,
+  CountTo,
 }
 
 export default {

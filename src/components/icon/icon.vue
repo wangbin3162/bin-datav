@@ -1,41 +1,79 @@
 <template>
-  <i :class="['b-iconfont', 'b-icon-' + name]" :style="iconStyle" @click="handleClick"></i>
+  <div class="bv-icon-wrapper" :style="styles" @click="handleClick">
+    <i :class="`b-iconfont b-icon-${icon}`"></i>
+  </div>
 </template>
 
 <script>
+import { computed } from 'vue'
+import { Utils } from 'bin-ui-next'
+
+const { mixWhite } = Utils.color
+
 export default {
-  name: 'VIcon',
+  name: 'BvIcon',
   props: {
-    name: {
+    icon: {
       type: String,
-      default: '',
+      required: true,
     },
-    size: [Number, String],
-    color: String,
-    type: {
+    color: {
       type: String,
-      validator(val) {
-        return ['icon', 'button'].includes(val)
-      },
-      default: 'icon',
     },
+    size: {
+      type: Number,
+      default: 32,
+    },
+    bg: Boolean,
+    round: Boolean,
+    type: String,
   },
   emits: ['click'],
-  computed: {
-    iconStyle() {
+  setup(props, { emit }) {
+    const colorVar = computed(() => {
+      const color = props.color
+      if (!color) return null
+      const colorMap = {
+        primary: '#1089ff',
+        success: '#52c41a',
+        info: '#35495E',
+        warning: '#fea638',
+        danger: '#ff4d4f',
+      }
+      return colorMap[color] ? colorMap[color] : color
+    })
+    const bgVar = computed(() => {
+      const color = colorVar.value
+      if (!color || !props.bg) return null
+      return mixWhite(color, 0.95)
+    })
+
+    const styles = computed(() => {
+      const size = props.size
+      const iconSize = size / 2 + 2
       return {
-        fontSize: this.size ? `${this.size}px` : null,
-        color: this.color,
-        cursor: this.type === 'button' ? 'pointer' : null,
+        cursor: props.type === 'btn' ? 'pointer' : null,
+        width: `${size}px`,
+        height: `${size}px`,
+        fontSize: `${iconSize}px`,
+        color: colorVar.value,
+        backgroundColor: bgVar.value,
+        borderRadius: props.round ? '50%' : '2px',
       }
-    },
-  },
-  methods: {
-    handleClick() {
-      if (this.type === 'button') {
-        this.$emit('click')
+    })
+
+    function handleClick() {
+      if (props.type === 'btn') {
+        emit('click', props.icon)
       }
-    },
+    }
+
+    return {
+      colorVar,
+      bgVar,
+      styles,
+      handleClick,
+    }
   },
 }
 </script>
