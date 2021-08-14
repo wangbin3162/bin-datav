@@ -125,7 +125,7 @@
 
 <script>
 import { generateId } from '../../../utils/util'
-import { userBorderBox } from '../../../hooks'
+import { useBorderBox } from '../../../hooks'
 
 export default {
   name: 'border9',
@@ -141,7 +141,7 @@ export default {
   },
   setup(props) {
     const id = generateId()
-    const status = userBorderBox(props, ['#11eefd', '#0078d2'])
+    const status = useBorderBox(props, ['#11eefd', '#0078d2'])
     return {
       ...status,
       gradientId: `border-box-9-gradient-${id}`,

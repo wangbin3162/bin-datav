@@ -43,6 +43,12 @@
           "icon": "expend",
           "name": "border",
           "path": "/border"
+        },
+        {
+          "desc": "Decorator 装饰器",
+          "icon": "gift",
+          "name": "decorator",
+          "path": "/decorator"
         }
       ]
     }

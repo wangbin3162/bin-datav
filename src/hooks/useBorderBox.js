@@ -6,9 +6,10 @@ import { deepCopy, deepMerge } from '../utils/util'
  * border-hook
  * @param props
  * @param _defaultColor 默认颜色
+ * @param afterResizeFun resize容器之后执行函数
  */
-export default function userBorderBox(props, _defaultColor = []) {
-  const autoResize = useAutoResize(props)
+export default function useBorderBox(props, _defaultColor = [], afterResizeFun) {
+  const { domRef, width, height, resize } = useAutoResize(afterResizeFun)
   const mergedColor = ref([])
   const defaultColor = ref(_defaultColor)
 
@@ -16,14 +17,17 @@ export default function userBorderBox(props, _defaultColor = []) {
     mergedColor.value = deepMerge(deepCopy(defaultColor.value), props.color || [])
   }
 
-  watch(() => props.color, (val) => {
+  watch(() => [props.color, props.reverse], () => {
     mergeColor()
   })
   onMounted(() => {
     mergeColor()
   })
   return {
-    ...autoResize,
+    domRef,
+    width,
+    height,
+    resize,
     defaultColor,
     mergedColor,
   }

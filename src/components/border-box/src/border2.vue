@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { userBorderBox } from '../../../hooks'
+import { useBorderBox } from '../../../hooks'
 
 export default {
   name: 'border2',
@@ -41,7 +41,7 @@ export default {
     },
   },
   setup(props) {
-    const status = userBorderBox(props, ['#fff', 'rgba(255, 255, 255, 0.6)'])
+    const status = useBorderBox(props, ['#fff', 'rgba(255, 255, 255, 0.6)'])
     return {
       ...status,
     }

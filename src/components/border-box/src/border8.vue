@@ -65,7 +65,7 @@
 
 <script>
 
-import { userBorderBox } from '../../../hooks'
+import { useBorderBox } from '../../../hooks'
 import { generateId } from '../../../utils/util'
 
 export default {
@@ -90,7 +90,7 @@ export default {
   },
   setup(props) {
     const id = generateId()
-    const status = userBorderBox(props, ['#235fa7', '#4fd2dd'])
+    const status = useBorderBox(props, ['#235fa7', '#4fd2dd'])
     return {
       ...status,
       path: `border-box-8-path-${id}`,

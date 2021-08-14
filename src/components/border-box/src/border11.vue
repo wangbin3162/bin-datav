@@ -215,7 +215,7 @@
 </template>
 
 <script>
-import { userBorderBox } from '../../../hooks'
+import { useBorderBox } from '../../../hooks'
 import { generateId } from '../../../utils/util'
 
 export default {
@@ -240,7 +240,7 @@ export default {
   },
   setup(props) {
     const id = generateId()
-    const status = userBorderBox(props, ['#8aaafb', '#1f33a2'])
+    const status = useBorderBox(props, ['#8aaafb', '#1f33a2'])
     return {
       ...status,
       filterId: `border-box-11-filterId-${id}`,

@@ -45,6 +45,10 @@ export default {
     border13,
   },
   props: {
+    name: {
+      type: String,
+      required: true,
+    },
     color: {
       type: Array,
       default: () => ([]),
@@ -52,10 +56,6 @@ export default {
     backgroundColor: {
       type: String,
       default: 'transparent',
-    },
-    name: {
-      type: String,
-      required: true,
     },
     reverse: {
       type: Boolean,

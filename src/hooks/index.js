@@ -1,2 +1,2 @@
 export { default as useAutoResize } from './useAutoResize'
-export { default as userBorderBox } from './userBorderBox'
+export { default as useBorderBox } from './useBorderBox'

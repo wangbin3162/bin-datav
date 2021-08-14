@@ -5,7 +5,11 @@ import { nextTick, onBeforeUnmount, onMounted, reactive, ref, toRefs } from 'vue
 import { addResizeListener, removeResizeListener } from '../utils/resize-event'
 import { debounce } from '../utils/util'
 
-export default function useAutoResize(props) {
+/**
+ * 自适应resize
+ * @param afterResizeFun resize容器之后执行函数
+*/
+export default function useAutoResize(afterResizeFun) {
   const domRef = ref(null) // dorm容器，默认设置为domRef
   const status = reactive({
     width: 0,
@@ -25,7 +29,7 @@ export default function useAutoResize(props) {
         console.warn('bin-datav: Component width or height is 0px, rendering abnormality may occur!')
       }
 
-      if (typeof props.onResize === 'function' && resize) props.onResize()
+      if (typeof afterResizeFun === 'function' && resize) afterResizeFun()
     })
   }
 

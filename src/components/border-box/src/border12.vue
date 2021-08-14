@@ -92,7 +92,7 @@
 
 <script>
 import { generateId } from '../../../utils/util'
-import { userBorderBox } from '../../../hooks'
+import { useBorderBox } from '../../../hooks'
 
 export default {
   name: 'border12',
@@ -108,7 +108,7 @@ export default {
   },
   setup(props) {
     const id = generateId()
-    const status = userBorderBox(props, ['#2e6099', '#7ce7fd'])
+    const status = useBorderBox(props, ['#2e6099', '#7ce7fd'])
     return {
       ...status,
       filterId: `border-box-12-filterId-${id}`,

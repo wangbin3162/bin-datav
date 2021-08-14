@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { userBorderBox } from '../../../hooks'
+import { useBorderBox } from '../../../hooks'
 
 export default {
   name: 'border3',
@@ -45,7 +45,7 @@ export default {
     },
   },
   setup(props) {
-    const status = userBorderBox(props, ['#2862b7', '#2862b7'])
+    const status = useBorderBox(props, ['#2862b7', '#2862b7'])
     return {
       ...status,
     }
