@@ -11,7 +11,7 @@
 <template>
   <b-button type="primary" @click="restart">restart</b-button>
   <div class="mt-15" flex="cross:center">
-    <b-tag type="primary" dot font-size="20px">
+    <b-tag type="primary" dot :tag-style="{fontSize:'20px',color:'rgba(255,255,255,.65)'}">
       <bv-count-to :startVal='startVal' :endVal='endVal' ref="countTo"></b-v>
     </b-tag>
   </div>

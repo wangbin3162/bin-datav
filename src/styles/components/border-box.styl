@@ -1,0 +1,401 @@
+.bv-border-box-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .border {
+    position: absolute;
+    display: block;
+  }
+
+  .right-top {
+    right: 0;
+    transform: rotateY(180deg);
+  }
+
+  .left-bottom {
+    bottom: 0;
+    transform: rotateX(180deg);
+  }
+
+  .right-bottom {
+    right: 0;
+    bottom: 0;
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.bv-border-box-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    & > polyline {
+      fill: none;
+      stroke-width: 1;
+    }
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    & > polyline {
+      fill: none;
+    }
+  }
+
+  .bv-bb3-line1 {
+    stroke-width: 3;
+  }
+
+  .bv-bb3-line2 {
+    stroke-width: 1;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    & > polyline {
+      fill: none;
+    }
+  }
+
+  sw1() {
+    stroke-width: 1;
+  }
+
+  sw3() {
+    stroke-width: 3px;
+    stroke-linecap: round;
+  }
+
+  .bv-bb4-line-1 {
+    sw1();
+  }
+
+  .bv-bb4-line-2 {
+    sw1();
+  }
+
+  .bv-bb4-line-3 {
+    sw3();
+  }
+
+  .bv-bb4-line-4 {
+    sw3();
+  }
+
+  .bv-bb4-line-5 {
+    sw1();
+  }
+
+  .bv-bb4-line-6 {
+    sw1();
+  }
+
+  .bv-bb4-line-7 {
+    sw1();
+  }
+
+  .bv-bb4-line-8 {
+    sw3();
+  }
+
+  .bv-bb4-line-9 {
+    sw3();
+    stroke-dasharray: 100 250;
+  }
+
+  .bv-bb4-line-10 {
+    sw1();
+    stroke-dasharray: 80 270;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-reverse {
+    transform: rotate(180deg);
+  }
+
+  .bv-border-svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & > polyline {
+      fill: none;
+    }
+  }
+
+  .bv-bb5-line-1, .bv-bb5-line-2 {
+    stroke-width: 1;
+  }
+
+  .bv-bb5-line-3, .bv-bb5-line-6 {
+    stroke-width: 5;
+  }
+
+  .bv-bb5-line-4, .bv-bb5-line-5 {
+    stroke-width: 2;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & > polyline {
+      fill: none;
+      stroke-width: 1;
+    }
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-7 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & > polyline {
+      fill: none;
+      stroke-linecap: round;
+    }
+  }
+
+  .bv-bb7-line-width-2 {
+    stroke-width: 2;
+  }
+
+  .bv-bb7-line-width-5 {
+    stroke-width: 5;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-8 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-9 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-10 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+
+  .bv-border-svg-container {
+    position: absolute;
+    display: block;
+  }
+
+  .right-top {
+    right: 0;
+    transform: rotateY(180deg);
+  }
+
+  .left-bottom {
+    bottom: 0;
+    transform: rotateX(180deg);
+  }
+
+  .right-bottom {
+    right: 0;
+    bottom: 0;
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-11 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    & > polyline {
+      fill: none;
+      stroke-width: 1;
+    }
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-12 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bv-border-box-13 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bv-border-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0 p;
+  }
+
+  .border-box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -37,7 +37,6 @@
     <bv-icon icon="appstore" color="primary"></bv-icon>
     <bv-icon icon="bulb" color="success"></bv-icon>
     <bv-icon icon="edit-square" color="warning"></bv-icon>
-    <bv-icon icon="tags" color="info"></bv-icon>
     <bv-icon icon="heart" color="danger"></bv-icon>
     <bv-icon icon="smile" color="#25bbe3"></bv-icon>
   </div>
@@ -60,15 +59,12 @@
       <bv-icon icon="appstore" color="primary" :size="30" bg></bv-icon>
       <bv-icon icon="bulb" color="success" :size="30" bg></bv-icon>
       <bv-icon icon="edit-square" color="warning" :size="30" bg></bv-icon>
-      <bv-icon icon="tags" color="info" :size="30" bg></bv-icon>
       <bv-icon icon="heart" color="danger" :size="30" bg></bv-icon>
       <bv-icon icon="smile" color="#25bbe3" :size="30" bg></bv-icon>
-    </p>
-    <p>
+      <b-divider type="vertical"></b-divider>
       <bv-icon icon="appstore" color="primary" :size="30" bg round></bv-icon>
       <bv-icon icon="bulb" color="success" :size="30" bg round></bv-icon>
       <bv-icon icon="edit-square" color="warning" :size="30" bg round></bv-icon>
-      <bv-icon icon="tags" color="info" :size="30" bg round></bv-icon>
       <bv-icon icon="heart" color="danger" :size="30" bg round></bv-icon>
       <bv-icon icon="smile" color="#25bbe3" :size="30" bg round></bv-icon>
     </p>
@@ -76,15 +72,12 @@
       <bv-icon icon="appstore" color="primary" :size="40" bg round></bv-icon>
       <bv-icon icon="bulb" color="success" :size="40" bg round></bv-icon>
       <bv-icon icon="edit-square" color="warning" :size="40" bg round></bv-icon>
-      <bv-icon icon="tags" color="info" :size="40" bg round></bv-icon>
       <bv-icon icon="heart" color="danger" :size="40" bg round></bv-icon>
       <bv-icon icon="smile" color="#25bbe3" :size="40" bg round></bv-icon>
-    </p>
-    <p>
+      <b-divider type="vertical"></b-divider>
       <bv-icon icon="appstore" color="primary" :size="40"></bv-icon>
       <bv-icon icon="bulb" color="success" :size="40"></bv-icon>
       <bv-icon icon="edit-square" color="warning" :size="40"></bv-icon>
-      <bv-icon icon="tags" color="info" :size="40"></bv-icon>
       <bv-icon icon="heart" color="danger" :size="40"></bv-icon>
       <bv-icon icon="smile" color="#25bbe3" :size="40"></bv-icon>
     </p>
@@ -107,7 +100,6 @@
     <bv-icon icon="appstore" color="primary" :size="30" bg round @click="clickFunc" type="btn"></bv-icon>
     <bv-icon icon="bulb" color="success" :size="30" bg round @click="clickFunc" type="btn"></bv-icon>
     <bv-icon icon="edit-square" color="warning" :size="30" bg round @click="clickFunc" type="btn"></bv-icon>
-    <bv-icon icon="tags" color="info" :size="30" bg round @click="clickFunc" type="btn"></bv-icon>
     <bv-icon icon="heart" color="danger" :size="30" bg round @click="clickFunc" type="btn"></bv-icon>
     <bv-icon icon="smile" color="#25bbe3" :size="30" bg round @click="clickFunc" type="btn"></bv-icon>
   </div>
@@ -131,8 +123,9 @@
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
 | icon   | 图标名称，基于iconfont，或取自bin-ui-next   | String  |    —       |   —     |
-| color     | 图标颜色   | String  |   primary，success，info，warning，danger，或自定义颜色值      |     —   |
+| color     | 图标颜色   | String  |   primary，success，warning，danger，或自定义颜色值      |     —   |
 | size   | 默认图标大小   | Number  |   —   |    32      |
+| alpha   | 背景色透明度   | Number  |   —   |    0.2      |
 | bg     | 是否显示背景图   | Boolean  |   —     |    false      |
 | round     | 是否是圆形图标背景   | Boolean  |   —    |   false    |
 | type     | 图标类型   | String  |   btn    |   —      |

@@ -47,7 +47,7 @@ export default {
     codeAreaHeight() {
       if (this.$el.getElementsByClassName('description').length > 0) {
         return this.$el.getElementsByClassName('description')[0].clientHeight +
-            this.$el.getElementsByClassName('highlight')[0].clientHeight + 20
+          this.$el.getElementsByClassName('highlight')[0].clientHeight + 20
       }
       return this.$el.getElementsByClassName('highlight')[0].clientHeight
     },
@@ -77,6 +77,8 @@ export default {
   }
   .source {
     padding: 24px;
+    background: #1f2f3d;
+    color: #fff;
   }
   .meta {
     background-color: #fafafa;

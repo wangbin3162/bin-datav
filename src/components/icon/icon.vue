@@ -6,9 +6,7 @@
 
 <script>
 import { computed } from 'vue'
-import { Utils } from 'bin-ui-next'
-
-const { mixWhite } = Utils.color
+import { alpha } from '../../utils/color'
 
 export default {
   name: 'BvIcon',
@@ -27,6 +25,10 @@ export default {
     bg: Boolean,
     round: Boolean,
     type: String,
+    alpha: {
+      type: Number,
+      default: 0.2,
+    },
   },
   emits: ['click'],
   setup(props, { emit }) {
@@ -36,7 +38,6 @@ export default {
       const colorMap = {
         primary: '#1089ff',
         success: '#52c41a',
-        info: '#35495E',
         warning: '#fea638',
         danger: '#ff4d4f',
       }
@@ -45,7 +46,7 @@ export default {
     const bgVar = computed(() => {
       const color = colorVar.value
       if (!color || !props.bg) return null
-      return mixWhite(color, 0.95)
+      return alpha(color, props.alpha)
     })
 
     const styles = computed(() => {

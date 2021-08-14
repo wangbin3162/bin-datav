@@ -22,10 +22,27 @@
           "path": "/icon"
         },
         {
+          "desc": "Loading 加载",
+          "icon": "loading2",
+          "name": "loading",
+          "path": "/loading"
+        },
+        {
           "desc": "数字翻牌器",
           "icon": "orderedlist",
           "name": "countTo",
           "path": "/count-to"
+        }
+      ]
+    },
+    {
+      "desc": "布局装饰",
+      "items": [
+        {
+          "desc": "BorderBox 边框盒子",
+          "icon": "expend",
+          "name": "border",
+          "path": "/border"
         }
       ]
     }
