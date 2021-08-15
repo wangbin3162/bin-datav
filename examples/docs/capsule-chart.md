@@ -184,8 +184,13 @@
 | 参数     | 说明    | 类型      | 可选值       | 默认值   |
 |----------|-------- |---------- |-------------  |-------- |
 | config   | 定义的config配置项，主要包含下面几个属性值   | Object  |    —      |     {}     |
-| -config.data   | 数据源，对象格式，{ name: '名称', value: '数值' },   | Array  |    —      |    []    |
-| -config.unit   | 单位   | String  |    —      |    —      |
-| -config.colors   | 主题色板   | Array  |    —      |  默认色     |
-| -config.showValue   | 是否显示数字   | Boolean  |    —      |  false     |
-| -config.valuePosition   | 数字显示位置   | String  |  right，inner     |  default     |
+
+### config
+
+| 参数     | 说明    | 类型      | 可选值       | 默认值   |
+|----------|-------- |---------- |-------------  |-------- |
+| data   | 数据源，对象格式，{ name: '名称', value: '数值' },   | Array  |    —      |    []    |
+| unit   | 单位   | String  |    —      |    —      |
+| colors   | 主题色板   | Array  |    —      |  默认色     |
+| showValue   | 是否显示数字   | Boolean  |    —      |  false     |
+| valuePosition   | 数字显示位置   | String  |  right，inner     |  default     |

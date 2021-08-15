@@ -1,0 +1,30 @@
+.bv-liquid-fill {
+  position: relative;
+
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  text {
+    font-size: 24px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+
+  ellipse, rect {
+    fill: none;
+    stroke-width: 3;
+  }
+
+  canvas {
+    margin-top: 8px;
+    margin-left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    box-sizing: border-box;
+  }
+}

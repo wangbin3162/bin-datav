@@ -60,6 +60,12 @@
           "icon": "unorderedlist",
           "name": "capsule-chart",
           "path": "/capsule-chart"
+        },
+        {
+          "desc": "LiquidFill 水球图",
+          "icon": "bg-colors",
+          "name": "liquidfill",
+          "path": "/liquidfill"
         }
       ]
     }

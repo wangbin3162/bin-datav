@@ -4,9 +4,11 @@ import Loading from './components/loading'
 import BorderBox from './components/border-box'
 import Decorator from './components/decorator'
 import CapsuleChart from './components/capsule-chart'
+import LiquidFill from './components/liquidfill'
 
 import config from '../package.json'
 import * as Util from './utils/util'
+import * as Theme from './utils/theme'
 import log from './utils/log'
 
 const version = config.version // version_ to fix tsc issue
@@ -18,6 +20,7 @@ const components = [
   BorderBox,
   Decorator,
   CapsuleChart,
+  LiquidFill,
 ]
 const install = function (app, options = {}) {
   components.forEach(component => {
@@ -32,6 +35,7 @@ const install = function (app, options = {}) {
 
 export {
   Util,
+  Theme,
   Icon,
   CountTo,
   Loading,
