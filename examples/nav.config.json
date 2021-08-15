@@ -72,6 +72,12 @@
           "icon": "minus",
           "name": "progress-bar",
           "path": "/progress-bar"
+        },
+        {
+          "desc": "ConicalChart 锥形图",
+          "icon": "minus",
+          "name": "conical-chart",
+          "path": "/conical-chart"
         }
       ]
     }

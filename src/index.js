@@ -6,6 +6,7 @@ import Decorator from './components/decorator'
 import CapsuleChart from './components/capsule-chart'
 import LiquidFill from './components/liquidfill'
 import ProgressBar from './components/progress-bar'
+import ConicalChart from './components/conical-chart'
 
 import config from '../package.json'
 import * as Util from './utils/util'
@@ -23,6 +24,7 @@ const components = [
   CapsuleChart,
   LiquidFill,
   ProgressBar,
+  ConicalChart,
 ]
 const install = function (app, options = {}) {
   components.forEach(component => {
@@ -45,6 +47,7 @@ export {
   Decorator,
   CapsuleChart,
   ProgressBar,
+  ConicalChart,
 }
 
 export default {
