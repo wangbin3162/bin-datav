@@ -7,6 +7,7 @@ import CapsuleChart from './components/capsule-chart'
 import LiquidFill from './components/liquidfill'
 import ProgressBar from './components/progress-bar'
 import ConicalChart from './components/conical-chart'
+import FlylineChart from './components/flyline-chart'
 
 import config from '../package.json'
 import * as Util from './utils/util'
@@ -25,6 +26,7 @@ const components = [
   LiquidFill,
   ProgressBar,
   ConicalChart,
+  FlylineChart,
 ]
 const install = function (app, options = {}) {
   components.forEach(component => {
@@ -48,6 +50,7 @@ export {
   CapsuleChart,
   ProgressBar,
   ConicalChart,
+  FlylineChart,
 }
 
 export default {

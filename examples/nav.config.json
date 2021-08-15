@@ -75,9 +75,15 @@
         },
         {
           "desc": "ConicalChart 锥形图",
-          "icon": "minus",
+          "icon": "up",
           "name": "conical-chart",
           "path": "/conical-chart"
+        },
+        {
+          "desc": "ConicalChart 飞线图",
+          "icon": "rocket-fill",
+          "name": "flyline-chart",
+          "path": "/flyline-chart"
         }
       ]
     }
