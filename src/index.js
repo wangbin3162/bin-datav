@@ -8,6 +8,8 @@ import LiquidFill from './components/liquidfill'
 import ProgressBar from './components/progress-bar'
 import ConicalChart from './components/conical-chart'
 import FlylineChart from './components/flyline-chart'
+import ScrollTable from './components/scroll-table'
+import ScrollRank from './components/scroll-rank'
 
 import config from '../package.json'
 import * as Util from './utils/util'
@@ -27,6 +29,8 @@ const components = [
   ProgressBar,
   ConicalChart,
   FlylineChart,
+  ScrollTable,
+  ScrollRank,
 ]
 const install = function (app, options = {}) {
   components.forEach(component => {
@@ -51,6 +55,8 @@ export {
   ProgressBar,
   ConicalChart,
   FlylineChart,
+  ScrollTable,
+  ScrollRank,
 }
 
 export default {

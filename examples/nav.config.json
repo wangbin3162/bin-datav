@@ -86,6 +86,23 @@
           "path": "/flyline-chart"
         }
       ]
+    },
+    {
+      "desc": "轮播",
+      "items": [
+        {
+          "desc": "轮播表格",
+          "icon": "table",
+          "name": "scroll-table",
+          "path": "/scroll-table"
+        },
+        {
+          "desc": "轮播排名",
+          "icon": "orderedlist",
+          "name": "scroll-rank",
+          "path": "/scroll-rank"
+        }
+      ]
     }
   ]
 }
