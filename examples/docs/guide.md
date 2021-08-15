@@ -10,6 +10,8 @@
 
 由于组件皆为大屏数据展示使用，因此，demo统一使用神色背景，组件文字等也都为浅色，如需建立白底的数据展示，需自行修改组件内容颜色。
 
+[![NPM version](https://img.shields.io/npm/v/bin-datav.svg)](https://www.npmjs.com/package/bin-datav)
+
 ### 安装
 
 用如下方式进行安装
@@ -20,3 +22,42 @@ npm i bin-datav -S
 yarn add bin-datav
 ```
 
+### 引入
+
+你可以引入整个 bin-datav，或是根据需要仅引入部分组件。我们先介绍如何引入完整的。
+
+#### 完整引入
+
+在 main.js 中写入以下内容：
+
+```javascript
+import { createApp } from 'vue'
+import BinDatav from 'bin-datav'
+import App from './App.vue'
+import 'bin-datav/lib/styles/index.css'
+
+const app = createApp(App)
+app.use(BinDatav)
+app.mount('#app')
+```
+
+以上代码便完成了 bin-datav 的引入。需要注意的是，样式文件需要单独引入。
+
+#### 按需引入
+
+如果你只希望引入部分组件，比如 Icon，那么需要在 main.js 中写入以下内容
+
+```javascript
+import { createApp } from 'vue'
+import { Icon } from 'bin-datav'
+import App from './App.vue'
+import 'bin-datav/lib/styles/components/icon.css'
+
+const app = createApp(App)
+app.use(Icon)
+app.mount('#app')
+```
+
+**特别提醒:按需引用仍然需要导入样式，即在 main.js 或根组件 import 'bin-datav/lib/styles/index.css';**
+
+完整组件列表参考源代码
