@@ -151,7 +151,6 @@ export default {
       const [w, h] = svgWH
 
       data.svgScale = [width.value / w, height.value / h]
-      console.log(data.svgScale)
     }
 
     return {

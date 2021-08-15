@@ -46,7 +46,6 @@ export default {
       default: 6,
     },
   },
-
   setup(props) {
     const status = useBorderBox(props, ['#3faacb', '#fff'], calcSVGData)
     const data = reactive({

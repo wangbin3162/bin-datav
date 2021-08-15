@@ -1,125 +1,5 @@
 /**
- * @description 更新标题
- * @param {String} title 标题
- */
-export function title(title) {
-  if (title) {
-    window.document.title = title
-  }
-}
-
-/**
- * @description 复制到剪切板
- * @param content
- */
-export function copy(content) {
-  return new Promise(resolve => {
-    const copyInput = document.createElement('textarea')
-    copyInput.value = content
-    copyInput.setAttribute('id', 'b-copy-temp')
-    document.body.appendChild(copyInput)
-    copyInput.select() // 选择对象
-    const result = document.execCommand('Copy') // 执行浏览器复制命令
-    copyInput.style.display = 'none'
-    document.body.removeChild(document.getElementById('b-copy-temp'))
-    resolve(result)
-  })
-}
-
-/**
- * @description 打开新页面
- * @param {String} url 地址
- * @param target
- */
-export function open(url, target = false) {
-  const a = document.createElement('a')
-  a.setAttribute('href', url)
-  if (target) {
-    a.setAttribute('target', '_blank')
-  }
-  a.setAttribute('id', 'b-link-temp')
-  document.body.appendChild(a)
-  a.click()
-  document.body.removeChild(document.getElementById('b-link-temp'))
-}
-
-/**
- * @description 日期格式化
- * @param time
- * @param cFormat
- * @param weekArray
- */
-export function parseTime(time, cFormat = '{y}-{m}-{d} {h}:{i}:{s}', weekArray) {
-  if (arguments.length === 0) {
-    return null
-  }
-  const type = typeOf(time)
-  let date
-  switch (type) {
-    case 'date':
-      date = time
-      break
-    case 'number':
-      date = new Date(time)
-      break
-    case 'string':
-      if (typeof time === 'string') {
-        date = new Date(time.replace(/-/g, '/'))
-      }
-      break
-    default:
-      return null
-  }
-  const formatObj = {
-    y: date.getFullYear(),
-    m: date.getMonth() + 1,
-    d: date.getDate(),
-    h: date.getHours(),
-    i: date.getMinutes(),
-    s: date.getSeconds(),
-    a: date.getDay(),
-  }
-  return cFormat.replace(/{([ymdhisa])+}/g, (result, key) => {
-    let value = formatObj[key]
-    if (key === 'a') {
-      if (weekArray && weekArray.length === 7) {
-        return weekArray[value]
-      }
-      return ['日', '一', '二', '三', '四', '五', '六'][value]
-    }
-    if (result.length > 0 && value < 10) { // 补0
-      value = '0' + value
-    }
-    return value || 0
-  })
-}
-
-/**
- * 获取区间范围，如近一周，近三个月，后一个月等
- * @param days 为负值时往前，正为之后的日期
- * @param mode
- * @returns {*}
- */
-export function rangeTime(days, mode = '{y}-{m}-{d}') {
-  const startDate = new Date()
-  const endDate = new Date()
-  if (days < 0) {
-    startDate.setTime(startDate.getTime() + 3600 * 1000 * 24 * days)
-  } else {
-    endDate.setTime(endDate.getTime() + 3600 * 1000 * 24 * days)
-  }
-  const startDateStr = parseTime(startDate, mode)
-  const endDateStr = parseTime(endDate, mode)
-  return {
-    startDate,
-    endDate,
-    startDateStr,
-    endDateStr,
-  }
-}
-
-/**
- * @description 精准判断对象类型
+ * 精准判断对象类型
  * @param obj
  */
 export function typeOf(obj) {
@@ -140,7 +20,7 @@ export function typeOf(obj) {
 }
 
 /**
- * @description 深拷贝
+ * 深拷贝
  * @param data
  */
 export function deepCopy(data) {
@@ -168,7 +48,7 @@ export function deepCopy(data) {
 }
 
 /**
- * @description 深覆盖
+ * 深覆盖
  * @param target
  * @param merged
  */
@@ -189,39 +69,9 @@ export function deepMerge(target, merged) {
   return target
 }
 
-/**
- * 在某个区间随机一个整数
- * @param min 最小值
- * @param max 最大值
- * @return {number}
- */
-export function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
-/**
- * 打乱某个数组
- * @return {number}
- */
-export function shuffle(arr) {
-  let newArr = arr.slice()// 复制一个新数组
-  for (let i = 0; i < newArr.length; i++) {
-    let j = getRandomInt(0, i)// 在0-当前循环的位置随机一个位置做交换
-    swap(arr, i, j)
-  }
-  return newArr
-}
-
-// 交换两个数组内容
-export function swap(arr, i, j) {
-  const t = arr[i]
-  arr[i] = arr[j]
-  arr[j] = t
-}
 
 /**
  * 节流函数，(限制函数的执行频率)返回函数连续调用时，空闲时间必须大于或等于 wait，func 才会执行
- *
  * @param  {function} func        回调函数
  * @param  {number}   wait        表示时间窗口的间隔
  * @param immediate 是否立即执行 true 则先调用，false不先调用
@@ -276,12 +126,21 @@ export function debounce(func, wait) {
   return throttle(func, wait, false)
 }
 
-// 判断是否是对象或数组
+/**
+ * 判断是否是对象或数组
+ * @param obj
+ * @returns {boolean}
+ */
 export function isObject(obj) {
   return typeof obj === 'object' && obj !== null
 }
 
-// 判定对象数组相等
+/**
+ * 判定对象数组相等
+ * @param obj1
+ * @param obj2
+ * @returns {boolean}
+ */
 export function isEqual(obj1, obj2) {
   // 两个数据有任何一个不是对象或数组
   if (!isObject(obj1) || !isObject(obj2)) {
@@ -315,5 +174,174 @@ export function isEqual(obj1, obj2) {
   return true
 }
 
-// 随机id
-export const generateId = () => Math.floor(Math.random() * 10000)
+/**
+ * 过滤数组数字
+ * @param array
+ * @returns {*}
+ */
+export function filterNonNumber(array) {
+  return array.filter(n => typeof n === 'number')
+}
+
+/**
+ * 数组数字求和
+ * @param nums
+ * @returns {*}
+ */
+export function mulAdd(nums) {
+  const newNums = filterNonNumber(nums)
+  return newNums.reduce((all, num) => all + num, 0)
+}
+
+/**
+ * 合并相同的stack data
+ * @param item
+ * @param series
+ * @returns {*[]}
+ */
+export function mergeSameStackData(item, series) {
+  const stack = item.stack
+
+  if (!stack) return [...item.data]
+
+  const stacks = series.filter(({ stack: s }) => s === stack)
+
+  const index = stacks.findIndex(({ data: d }) => d === item.data)
+
+  const datas = stacks.splice(0, index + 1).map(({ data }) => data)
+
+  const dataLength = datas[0].length
+
+  return new Array(dataLength)
+    .fill(0)
+    .map((foo, i) => mulAdd(datas.map(d => d[i])))
+}
+
+/**
+ * 获取两个点的距离
+ * @param pointOne
+ * @param pointTwo
+ * @returns {number}
+ */
+export function getTwoPointDistance(pointOne, pointTwo) {
+  const minusX = Math.abs(pointOne[0] - pointTwo[0])
+
+  const minusY = Math.abs(pointOne[1] - pointTwo[1])
+
+  return Math.sqrt(minusX * minusX + minusY * minusY)
+}
+
+/**
+ * getLinearGradientColor
+ * @param ctx
+ * @param begin
+ * @param end
+ * @param color
+ */
+export function getLinearGradientColor(ctx, begin, end, color) {
+  if (!ctx || !begin || !end || !color.length) return
+
+  let colors = color
+
+  typeof colors === 'string' && (colors = [color, color])
+
+  const linearGradientColor = ctx.createLinearGradient(...begin, ...end)
+
+  const colorGap = 1 / (colors.length - 1)
+
+  colors.forEach((c, i) => linearGradientColor.addColorStop(colorGap * i, c))
+
+  return linearGradientColor
+}
+
+/**
+ * 获取折现长度
+ * @param points
+ * @returns {*}
+ */
+export function getPolylineLength(points) {
+  const lineSegments = new Array(points.length - 1)
+    .fill(0)
+    .map((foo, i) => [points[i], points[i + 1]])
+
+  const lengths = lineSegments.map(item => getTwoPointDistance(...item))
+
+  return mulAdd(lengths)
+}
+
+/**
+ * 获取点到线的距离
+ * @param point
+ * @param linePointOne
+ * @param linePointTwo
+ * @returns {number}
+ */
+export function getPointToLineDistance(point, linePointOne, linePointTwo) {
+  const a = getTwoPointDistance(point, linePointOne)
+  const b = getTwoPointDistance(point, linePointTwo)
+  const c = getTwoPointDistance(linePointOne, linePointTwo)
+
+  return 0.5 * Math.sqrt((a + b + c) * (a + b - c) * (a + c - b) * (b + c - a)) / c
+}
+
+/**
+ * 初始化需要的charts series
+ * @param series
+ * @param config
+ * @param type
+ * @returns {*}
+ */
+export function initNeedSeries(series, config, type) {
+  series = series.filter(({ type: st }) => st === type)
+
+  series = series.map(item => deepMerge(deepCopy(config), item))
+
+  return series.filter(({ show }) => show)
+}
+
+/**
+ * 弧度转为角度
+ * @param radian
+ * @returns {number}
+ */
+export function radianToAngle(radian) {
+  return radian / Math.PI * 180
+}
+
+/**
+ * 随机一个数，需提供最大最小值
+ * @param minNum
+ * @param maxNum
+ * @returns {number}
+ */
+export function randomExtend(minNum, maxNum) {
+  if (arguments.length === 1) {
+    return parseInt(Math.random() * minNum + 1, 10)
+  } else {
+    return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
+  }
+}
+
+/**
+ * @description Get the coordinates of the specified radian on the circle
+ * @param {Number} x      Circle x coordinate
+ * @param {Number} y      Circle y coordinate
+ * @param {Number} radius Circle radius
+ * @param {Number} radian Specfied radian
+ * @return {Array} Postion of point
+ */
+export function getCircleRadianPoint(x, y, radius, radian) {
+  return [x + Math.cos(radian) * radius, y + Math.sin(radian) * radius]
+}
+
+/**
+ * 获取随机uuid
+ */
+export function generateId(hasHyphen) {
+  const str = hasHyphen ? 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx' : 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'
+  return str.replace(/[xy]/g, c => {
+    const r = Math.random() * 16 | 0
+    const v = c === 'x' ? r : (r & 0x3 | 0x8)
+    return v.toString(16)
+  })
+}

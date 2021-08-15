@@ -1,17 +1,17 @@
 <template>
   <div class="bv-border-box-12" ref="domRef">
-    <svg class="bv-border-svg-container" :width="width" :height="height">
+    <svg class="dv-border-svg-container" :width="width" :height="height">
       <defs>
         <filter :id="filterId" height="150%" width="150%" x="-25%" y="-25%">
           <feMorphology operator="dilate" radius="1" in="SourceAlpha" result="thicken"/>
           <feGaussianBlur in="thicken" stdDeviation="2" result="blurred"/>
-          <feFlood :flood-color="mergedColor[1]" result="glowColor">
+          <feFlood :flood-color="alpha(mergedColor[1] || defaultColor[1], .7)" result="glowColor">
             <animate
               attributeName="flood-color"
               :values="`
-                ${mergedColor[1]};
-                ${defaultColor[1]};
-                ${mergedColor[1]};
+                ${alpha(mergedColor[1] || defaultColor[1], .7)};
+                ${alpha(mergedColor[1] || defaultColor[1], .3)};
+                ${alpha(mergedColor[1] || defaultColor[1], .7)};
               `"
               dur="3s"
               begin="0s"
@@ -40,7 +40,7 @@
       />
 
       <path
-        stroke-width="1"
+        stroke-width="2"
         fill="transparent"
         stroke-linecap="round"
         :filter="`url(#${filterId})`"
@@ -49,7 +49,7 @@
       />
 
       <path
-        stroke-width="1"
+        stroke-width="2"
         fill="transparent"
         stroke-linecap="round"
         :filter="`url(#${filterId})`"
@@ -58,7 +58,7 @@
       />
 
       <path
-        stroke-width="1"
+        stroke-width="2"
         fill="transparent"
         stroke-linecap="round"
         :filter="`url(#${filterId})`"
@@ -71,7 +71,7 @@
       />
 
       <path
-        stroke-width="1"
+        stroke-width="2"
         fill="transparent"
         stroke-linecap="round"
         :filter="`url(#${filterId})`"
@@ -93,6 +93,7 @@
 <script>
 import { generateId } from '../../../utils/util'
 import { useBorderBox } from '../../../hooks'
+import { alpha } from '../../../utils/color'
 
 export default {
   name: 'border12',
@@ -112,6 +113,7 @@ export default {
     return {
       ...status,
       filterId: `border-box-12-filterId-${id}`,
+      alpha,
     }
   },
 }

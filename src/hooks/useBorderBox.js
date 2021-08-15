@@ -30,5 +30,6 @@ export default function useBorderBox(props, _defaultColor = [], afterResizeFun) 
     resize,
     defaultColor,
     mergedColor,
+    mergeColor,
   }
 }

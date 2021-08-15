@@ -5,6 +5,7 @@ import BorderBox from './components/border-box'
 import Decorator from './components/decorator'
 
 import config from '../package.json'
+import * as Util from './utils/util'
 import log from './utils/log'
 
 const version = config.version // version_ to fix tsc issue
@@ -28,6 +29,7 @@ const install = function (app, options = {}) {
 }
 
 export {
+  Util,
   Icon,
   CountTo,
   Loading,
