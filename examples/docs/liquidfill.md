@@ -93,7 +93,7 @@
           waveNum: 3,
           waveHeight: 10,
           waveOpacity: 0.3,
-          fontColor: '#fff'
+          textColor: '#fff'
         }
       }
     }
@@ -120,4 +120,4 @@
 | waveHeight   | 波浪高度   | Number  |   —      |  20     |
 | waveOpacity   | 波浪透明度   | Number  |   —      |  0.4     |
 | formatter   | 显示文字格式化   | String  |   —      | '{value}%'     |
-| fontColor   | 显示文字颜色   | String  |   —      |   —     |
+| textColor   | 显示文字颜色   | String  |   —      |   —     |

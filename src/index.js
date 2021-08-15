@@ -5,6 +5,7 @@ import BorderBox from './components/border-box'
 import Decorator from './components/decorator'
 import CapsuleChart from './components/capsule-chart'
 import LiquidFill from './components/liquidfill'
+import ProgressBar from './components/progress-bar'
 
 import config from '../package.json'
 import * as Util from './utils/util'
@@ -21,6 +22,7 @@ const components = [
   Decorator,
   CapsuleChart,
   LiquidFill,
+  ProgressBar,
 ]
 const install = function (app, options = {}) {
   components.forEach(component => {
@@ -42,6 +44,7 @@ export {
   BorderBox,
   Decorator,
   CapsuleChart,
+  ProgressBar,
 }
 
 export default {

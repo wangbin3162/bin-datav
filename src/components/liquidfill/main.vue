@@ -10,8 +10,8 @@
       </defs>
       <text
         v-if="renderer"
-        :stroke="mergedConfig.fontColor||`url(#${gradientId})`"
-        :fill="mergedConfig.fontColor||`url(#${gradientId})`"
+        :stroke="mergedConfig.textColor||`url(#${gradientId})`"
+        :fill="mergedConfig.textColor||`url(#${gradientId})`"
         :x="renderer.area[0] / 2 + 8"
         :y="renderer.area[1] / 2 + 8"
       >

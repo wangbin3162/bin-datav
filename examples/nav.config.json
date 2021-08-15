@@ -66,6 +66,12 @@
           "icon": "bg-colors",
           "name": "liquidfill",
           "path": "/liquidfill"
+        },
+        {
+          "desc": "ProgressBar 进度图",
+          "icon": "minus",
+          "name": "progress-bar",
+          "path": "/progress-bar"
         }
       ]
     }
