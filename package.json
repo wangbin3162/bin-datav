@@ -1,6 +1,6 @@
 {
   "name": "bin-datav",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "bin-datav",
     "bin",
@@ -14,9 +14,9 @@
     "lib",
     "src"
   ],
-  "main": "lib/bin-ui.common.js",
-  "module": "lib/bin-ui.esm.js",
-  "unpkg": "lib/bin-ui.js",
+  "main": "lib/bin-datav.common.js",
+  "module": "lib/bin-datav.esm.js",
+  "unpkg": "lib/bin-datav.js",
   "style": "lib/styles/index.css",
   "homepage": "https://wangbin3162.gitee.io/bin-datav/",
   "private": false,
