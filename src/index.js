@@ -3,6 +3,7 @@ import CountTo from './components/count-to'
 import Loading from './components/loading'
 import BorderBox from './components/border-box'
 import Decorator from './components/decorator'
+import CapsuleChart from './components/capsule-chart'
 
 import config from '../package.json'
 import * as Util from './utils/util'
@@ -16,6 +17,7 @@ const components = [
   Loading,
   BorderBox,
   Decorator,
+  CapsuleChart,
 ]
 const install = function (app, options = {}) {
   components.forEach(component => {
@@ -35,6 +37,7 @@ export {
   Loading,
   BorderBox,
   Decorator,
+  CapsuleChart,
 }
 
 export default {

@@ -51,6 +51,17 @@
           "path": "/decorator"
         }
       ]
+    },
+    {
+      "desc": "图表类",
+      "items": [
+        {
+          "desc": "CapsuleChart 胶囊柱图",
+          "icon": "unorderedlist",
+          "name": "capsule-chart",
+          "path": "/capsule-chart"
+        }
+      ]
     }
   ]
 }

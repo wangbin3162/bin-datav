@@ -36,4 +36,4 @@ function copyFont() {
     .pipe(dest('../lib/styles/fonts'))
 }
 
-task('default', series(compile))
+task('default', series(compile, compileComponents))
