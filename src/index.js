@@ -38,7 +38,7 @@ const install = function (app, options = {}) {
   })
 
   if (!options.disabledDoc) {
-    log.pretty(`[${config.name}] ${config.version}`, config.homepage)
+    log.printVersion(config.name, config.version, config.homepage, '#0a5299')
   }
   return app
 }
