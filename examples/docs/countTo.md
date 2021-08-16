@@ -9,11 +9,13 @@
 ```html
 
 <template>
-  <b-button type="primary" @click="restart">restart</b-button>
-  <div class="mt-15" flex="cross:center">
-    <b-tag type="primary" dot :tag-style="{fontSize:'20px',color:'rgba(255,255,255,.65)'}">
-      <bv-count-to :startVal='startVal' :endVal='endVal' ref="countTo"></b-v>
-    </b-tag>
+  <div>
+    <b-button type="primary" @click="restart">restart</b-button>
+    <div class="mt-15" flex="cross:center">
+      <b-tag type="primary" dot :tag-style="{fontSize:'20px',color:'rgba(255,255,255,.65)'}">
+        <bv-count-to :startVal='startVal' :endVal='endVal' ref="countTo"></bv-count-to>
+      </b-tag>
+    </div>
   </div>
 </template>
 <script>
@@ -44,20 +46,22 @@
 ```html
 
 <template>
-  <b-button type="primary" @click="restart">restart</b-button>
-  <div class="mt-15" flex="cross:center">
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
-      <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" ref="countTo1"></bv-count-to>
-    </div>
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
-      <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" :decimals="2" ref="countTo2"></bv-count-to>
-    </div>
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
-      <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" separator="" ref="countTo3"></bv-count-to>
-    </div>
-    <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
-      <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" prefix="$" suffix="美金"
-                  ref="countTo4"></bv-count-to>
+  <div>
+    <b-button type="primary" @click="restart">restart</b-button>
+    <div class="mt-15" flex="cross:center">
+      <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
+        <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" ref="countTo1"></bv-count-to>
+      </div>
+      <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
+        <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" :decimals="2" ref="countTo2"></bv-count-to>
+      </div>
+      <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
+        <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" separator="" ref="countTo3"></bv-count-to>
+      </div>
+      <div style="font-size:18px; color: #1089ff; width: 120px;margin-right:16px;">
+        <bv-count-to :startVal='startVal' :endVal='endVal' :duration="3000" prefix="$" suffix="美金"
+                     ref="countTo4"></bv-count-to>
+      </div>
     </div>
   </div>
 </template>
