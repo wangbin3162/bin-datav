@@ -5,6 +5,12 @@
 <div class="doc-update">
     <b-timeline>
       <b-timeline-item>
+        <p class="version">0.1.2</p>
+        <p class="time">2021-08-23</p>
+        <p class="content"><i>🍀</i>修改log打印，控制输出</p>
+        <p class="content"><i>🍀</i>修复飞线图</p>
+      </b-timeline-item>
+      <b-timeline-item>
         <p class="version">0.1.0</p>
         <p class="time">2021-08-15</p>
         <p class="content"><i>🍀</i>初始化工程</p>
