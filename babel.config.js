@@ -26,7 +26,7 @@ module.exports = {
       ],
       plugins: [
         [
-          'module-resolver',
+          'babel-plugin-module-resolver',
           {
             root: ['bin-datav'],
             alias: { 'bin-datav/src': 'bin-datav/lib' },

@@ -5,6 +5,12 @@
 <div class="doc-update">
     <b-timeline>
       <b-timeline-item>
+        <p class="version">0.1.5</p>
+        <p class="time">2021-09-26</p>
+        <p class="content"><i>🍀</i>更新vue版本，依赖3.2.19</p>
+        <p class="content"><i>🍀</i>更新文档版本，更新文档依赖，更新组件库版本</p>
+      </b-timeline-item>
+      <b-timeline-item>
         <p class="version">0.1.4</p>
         <p class="time">2021-09-08</p>
         <p class="content"><i>🍀</i>更新vue版本，依赖3.2.10</p>

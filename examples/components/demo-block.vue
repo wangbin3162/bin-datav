@@ -147,10 +147,10 @@ export default {
     }
   }
   .demo-block-control {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid 1px #eaeefb;
     height: 44px;
     box-sizing: border-box;
     background-color: #fff;
@@ -169,7 +169,15 @@ export default {
     }
     &:hover {
       color: #1089ff;
-      background-color: #f9fafc;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #eaeefb;
     }
   }
 }
