@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@jiaminghi/c-render": "^0.4.3",
+    "bin-ui-next": "^1.0.6",
     "color": "^4.0.1",
     "resize-observer-polyfill": "^1.5.1"
   },
@@ -57,7 +58,6 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "bin-ui-next": "^1.0.5",
     "cross-env": "^7.0.2",
     "css-loader": "^6.3.0",
     "css-minimizer-webpack-plugin": "^3.0.2",
