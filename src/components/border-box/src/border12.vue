@@ -1,6 +1,6 @@
 <template>
   <div class="bv-border-box-12" ref="domRef">
-    <svg class="dv-border-svg-container" :width="width" :height="height">
+    <svg class="bv-border-svg-container" :width="width" :height="height">
       <defs>
         <filter :id="filterId" height="150%" width="150%" x="-25%" y="-25%">
           <feMorphology operator="dilate" radius="1" in="SourceAlpha" result="thicken"/>

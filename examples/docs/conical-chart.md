@@ -28,13 +28,13 @@
             { name: '新乡', value: 38 },
           ],
           img: [
-            this.$images['1st'],
-            this.$images['2st'],
-            this.$images['3st'],
-            this.$images['4st'],
-            this.$images['5st'],
-            this.$images['6st'],
-            this.$images['7st'],
+            'https://wangbin3162.gitee.io/bin-files/other/1st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/2st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/3st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/4st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/5st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/6st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/7st.png',
           ]
         }
       }
@@ -71,13 +71,13 @@
             { name: '新乡', value: 38 },
           ],
           img: [
-            this.$images['1st'],
-            this.$images['2st'],
-            this.$images['3st'],
-            this.$images['4st'],
-            this.$images['5st'],
-            this.$images['6st'],
-            this.$images['7st'],
+            'https://wangbin3162.gitee.io/bin-files/other/1st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/2st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/3st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/4st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/5st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/6st.png',
+            'https://wangbin3162.gitee.io/bin-files/other/7st.png',
           ],
           showValue: true
         }

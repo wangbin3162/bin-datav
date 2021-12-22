@@ -84,7 +84,7 @@
               name: '徐州',
               coordinate: [0.67, 0.54],
               icon: {
-                src: this.$images['mapCenter'],
+                src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
                 width: 30,
                 height: 30
               }
@@ -123,7 +123,7 @@
           ],
           icon: {
             show: true,
-            src: this.$images['mapPoint'],
+            src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
           },
         }
       }
@@ -157,7 +157,7 @@
               name: '徐州',
               coordinate: [0.67, 0.54],
               icon: {
-                src: this.$images['mapCenter'],
+                src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
                 width: 30,
                 height: 30
               }
@@ -196,7 +196,7 @@
           ],
           icon: {
             show: true,
-            src: this.$images['mapPoint'],
+            src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
           },
           text: {
             show: true
@@ -236,7 +236,7 @@
                 show: true,
               },
               icon: {
-                src: this.$images['mapCenter'],
+                src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
                 width: 30,
                 height: 30
               }
@@ -275,7 +275,7 @@
           ],
           icon: {
             show: true,
-            src: this.$images['mapPoint'],
+            src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
           },
           text: {
             show: true
@@ -315,7 +315,7 @@
                 show: true,
               },
               icon: {
-                src: this.$images['mapCenter'],
+                src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
                 width: 30,
                 height: 30
               }
@@ -354,7 +354,7 @@
           ],
           icon: {
             show: true,
-            src: this.$images['mapPoint'],
+            src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
           },
           k: 0.6,
           text: {
@@ -395,7 +395,7 @@
                 show: true,
               },
               icon: {
-                src: this.$images['mapCenter'],
+                src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
                 width: 30,
                 height: 30
               }
@@ -448,7 +448,7 @@
           ],
           icon: {
             show: true,
-            src: this.$images['mapPoint'],
+            src: 'https://wangbin3162.gitee.io/bin-files/other/mapPoint.png',
           },
           text: {
             show: true
