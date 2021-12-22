@@ -5,7 +5,7 @@
 <div class="doc-update">
     <b-timeline>
       <b-timeline-item>
-        <p class="version">0.1.7</p>
+        <p class="version">0.1.8</p>
         <p class="time">2021-12-22</p>
         <p class="content"><i>🍀</i>更新文档图片</p>
         <p class="content"><i>🍀</i>更新部分代码，修复部分bug</p>
