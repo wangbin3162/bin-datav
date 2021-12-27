@@ -5,7 +5,7 @@
 <div class="doc-update">
     <b-timeline>
       <b-timeline-item>
-        <p class="version">0.1.9</p>
+        <p class="version">0.1.13</p>
         <p class="time">2021-12-27</p>
         <p class="content"><i>🍀</i>修复轮播表格和轮播排名resize时计时器不清空的问题</p>
       </b-timeline-item>

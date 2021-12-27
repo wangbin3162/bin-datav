@@ -179,8 +179,10 @@ export default {
 
     function onResize() {
       if (!status.mergedConfig) return
+      stopAnimation()
       calcWidths()
-      calcHeights()
+      calcHeights(true)
+      animation(true)
     }
 
     function calcData() {

@@ -10,7 +10,7 @@
     >
       <div class="ranking-info">
         <div class="rank">No.{{ item.ranking }}</div>
-        <div class="info-name" v-html="item.name"/>
+        <div class="info-name" v-html="item.name" />
         <div class="ranking-value">
           {{ mergedConfig.valueFormatter ? mergedConfig.valueFormatter(item) : item.value + mergedConfig.unit }}
         </div>
@@ -20,7 +20,7 @@
           class="inside-column"
           :style="`width: ${item.percent}%;`"
         >
-          <div class="shine"/>
+          <div class="shine" />
         </div>
       </div>
     </div>
@@ -116,7 +116,9 @@ export default {
 
     function onResize() {
       if (!status.mergedConfig) return
+      stopAnimation()
       calcHeights(true)
+      animation(true)
     }
 
     function calcData() {
@@ -211,6 +213,7 @@ export default {
       height,
       resize,
       handleHover,
+      onResize,
     }
   },
 }
