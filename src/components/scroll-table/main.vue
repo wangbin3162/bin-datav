@@ -184,6 +184,7 @@ export default {
     }
 
     function calcData() {
+      stopAnimation()
       mergeConfig()
       calcHeaderData()
       calcRowsData()
