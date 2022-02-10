@@ -66,7 +66,7 @@ var map = {
 		115
 	],
 	"./scroll-table.md": [
-		797,
+		4810,
 		110
 	]
 };
@@ -299,7 +299,7 @@ module.exports = JSON.parse('{"name":"bin-datav","version":"0.2.0","keywords":["
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "4990dda4cc451aaae671"; }
+/******/ 		__webpack_require__.h = function() { return "1293c35d2807cd01363a"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

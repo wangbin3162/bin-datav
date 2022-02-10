@@ -230,7 +230,7 @@ columnWidth与align允许尾部缺省：
 | waitTime   | 轮播时间间隔(ms)   | Number  |   —      | 2000 |
 | headerHeight   | 表头高度   | Boolean  |   —      | 35  |
 | columnWidth   | 列宽度 ，columnWidth可以配置每一列的宽度，默认情况下每一列宽度相等。如输入的列不足，则剩余的补足  | Array  |   —      |   []   |
-| align   | 列对齐方式 ，align可以配置每一列的对齐方式，默认值为'left'  | String  |  'left'，'center'，'right'     |  'left'   |
+| align   | 列对齐方式 ，align可以配置每一列的对齐方式，默认值为'left'，默认情况下每一列对齐均为left  | Array  |  'left'，'center'，'right'     |  'left'   |
 | index   | 显示行号   | Boolean  |  true|false         |   false   |
 | indexHeader   | 行号表头   | String  |  —       | '#' |
 | carousel   | 轮播方式   | String  |  'single'|'page'         |  'single'   |
