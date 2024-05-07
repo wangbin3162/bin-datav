@@ -12,6 +12,10 @@
 
 [![NPM version](https://img.shields.io/npm/v/bin-datav.svg)](https://www.npmjs.com/package/bin-datav)
 
+### 文档
+[文档说明](https://wangbin3162.github.io/bin-datav/)
+
+
 ### 安装
 
 用如下方式进行安装

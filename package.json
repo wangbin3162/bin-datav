@@ -18,7 +18,7 @@
   "module": "lib/bin-datav.esm.js",
   "unpkg": "lib/bin-datav.js",
   "style": "lib/styles/index.css",
-  "homepage": "https://wangbin3162.gitee.io/bin-datav/",
+  "homepage": "https://wangbin3162.github.io/bin-datav/",
   "private": false,
   "license": "MIT",
   "scripts": {

@@ -28,13 +28,13 @@
             { name: '新乡', value: 38 },
           ],
           img: [
-            'https://wangbin3162.gitee.io/bin-files/other/1st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/2st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/3st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/4st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/5st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/6st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/7st.png',
+            'https://wangbin3162.github.io/bin-files/other/1st.png',
+            'https://wangbin3162.github.io/bin-files/other/2st.png',
+            'https://wangbin3162.github.io/bin-files/other/3st.png',
+            'https://wangbin3162.github.io/bin-files/other/4st.png',
+            'https://wangbin3162.github.io/bin-files/other/5st.png',
+            'https://wangbin3162.github.io/bin-files/other/6st.png',
+            'https://wangbin3162.github.io/bin-files/other/7st.png',
           ]
         }
       }
@@ -71,13 +71,13 @@
             { name: '新乡', value: 38 },
           ],
           img: [
-            'https://wangbin3162.gitee.io/bin-files/other/1st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/2st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/3st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/4st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/5st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/6st.png',
-            'https://wangbin3162.gitee.io/bin-files/other/7st.png',
+            'https://wangbin3162.github.io/bin-files/other/1st.png',
+            'https://wangbin3162.github.io/bin-files/other/2st.png',
+            'https://wangbin3162.github.io/bin-files/other/3st.png',
+            'https://wangbin3162.github.io/bin-files/other/4st.png',
+            'https://wangbin3162.github.io/bin-files/other/5st.png',
+            'https://wangbin3162.github.io/bin-files/other/6st.png',
+            'https://wangbin3162.github.io/bin-files/other/7st.png',
           ],
           showValue: true
         }
